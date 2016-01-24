@@ -15,7 +15,7 @@ def n_files(directory):
             total += 1
     return total
 
-# Creates a new directory within given directory called PDFs
+# Creates a new directory within current directory called PDFs
 def createFolder(directory):
     if not os.path.exists(directory + '\\PDFs'):
         os.makedirs(directory + '\\PDFs')
