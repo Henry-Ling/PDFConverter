@@ -1,6 +1,6 @@
 ##############################################
 ## Script to convert .doc or .docx to .pdf  ##
-##         Written by Henry Ling            ##
+##         Written by udhay begyall         ##
 ##############################################
 
 import os
