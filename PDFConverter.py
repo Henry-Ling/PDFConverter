@@ -6,6 +6,7 @@
 import os
 from time import strftime
 from sys import platform, exc_info
+from win32com import client
 
 # Counts the number of files in the directory that can be converted
 def n_files(directory):
@@ -65,7 +66,7 @@ if __name__ == "__main__":
     # Opens each file with Microsoft Word and saves as a PDF
     try:
         if(is_tool('libreoffice') == False):
-            from win32com import client
+            
             word = client.DispatchEx('Word.Application')
         for file in os.listdir(directory):
             if (file.endswith('.doc') or file.endswith('.docx') or file.endswith('.tmd')):
